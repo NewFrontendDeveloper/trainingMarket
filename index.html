@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/adaptation.css">
+    <link rel="stylesheet" href="/css/modal-window.css">
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header class="header">
+        <div class="logo-nav">
+            <h1 class="logo"><a href="#">VtactStore:</a></h1>
+            <div class="cont-nav">
+                <nav>
+                    <a href="/pages/new.html">Новинки</a>
+                    <a href="/pages/laptop.html">Ноутбуки</a>
+                    <a href="/pages/phone.html">Смартфоны</a>
+                    <a href="/pages/console.html">Игры</a>
+                    <a href="/pages/accessories.html">Аксессуары</a>
+                </nav>
+            </div>
+        </div>
+        <div class="login-cart">
+            <div id="main-cont-cart" style="cursor: pointer;">
+                <a class="card"><ion-icon name="bag-handle-outline" class="cart-icon"></ion-icon></a>
+                <div class="count-cart"><span>0</span></div>
+            </div>
+
+            <div class="signin"><a href="pages/SignIn.html" class="signin">Вход</div></a>
+        </div>
+    </header>
+
+    <div class="slider-cont" id="home">
+        <div class="slideshow-container">
+
+            <!-- Полноразмерные изображения с числом и текстом подписи -->
+            <div class="mySlides fade">
+                <img src="/pic/arrangement-of-black-friday-clock-with-copy-space_23-2148665530.jpg" style="width:100%">
+                <div class="text-sale">Успей купить сейчас!<br>Акции продляться <div class="Data-baner">до 15
+                        февраля</div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="/pic/girl-showing-friend-cool-new-mobile-game-attractive-cheerful-redhead-woman-holding-smartphone-introd_1258-144079.jpg"
+                    style="width:100%">
+                <div class="text-sale-phone">Большие скидки!<img src="/pic/sale-proc.png"
+                        class="sale-proc"><br>Cмартфоны по пол цены,<br> только у нас
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="/pic/cute-redhead-woman-in-sweater-showing-and-looking-at-laptop-screen-with-pleased-smile-demonstrating_1258-157459.jpg"
+                    style="width:100%">
+                <div class="text-sale-laptop">Не тормози,<br> успей забрать ноутбук<br> сейчас!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="/pic/top-view-virtual-reality-headset-with-joystick_23-2148912730.jpg" style="width:100%">
+                <div class="text-sale-console">Давай,<br> не упусти возможность<br> взять игровые девайсы<br> по
+                    смешным ценам <img src="/pic/sale.png" class="sale">
+                </div>
+            </div>
+
+            <!-- Вперед и назад кнопки -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Точки/круги -->
+        <div style="text-align:center" class="dot-cont">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    <!-- Основной контейнер -->
+    <div class="main-cont">
+        <!-- Модальное окно -->
+        <div id="cont-modal-window-cart">
+            <div id="modal-window-cart">
+                <div class="modal-product-characteristic">
+                    <h1>VtactCart</h1>
+
+                </div>
+                <hr>
+                <div class="cart-items"></div>
+
+                <div class="modal-footer-info">
+                    <div class="modal-subtotal">
+                        <p>Итого:</p>
+                        <p><span class="subtotal-cart-price">0 </span>₽</p>
+                    </div>
+                    <div class="all-modal-btn">
+                        <button id="modal-btn-exit">Продолжить покупки</button>
+                        <button id="modal-btn-checkout">К оплате</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- контейнер каталога -->
+        <div class="cont-cotalog">
+
+            <a href="/pages/laptop.html">
+                <div class="catalogs-div">
+                    <div class="catalogs-div"><img src="/pic/opened-laptop-on-colouful-background_23-2148226842.jpg"
+                            class="img"></div>
+                    <div class="text-catalogs">Ноутбуки</div>
+                </div>
+            </a>
+
+
+            <a href="/pages/phone.html">
+                <div class="catalogs-div">
+                    <img src="/pic/Apple_iPhone_14_Pro_Max_3.jpg" class="img">
+                    <div class="text-catalogs">Смартфоны</div>
+                </div>
+            </a>
+
+
+
+            <a href="/pages/tablet.html">
+                <div class="catalogs-div">
+                    <img src="/pic/tablets-with-ribbons-in-red-packet_23-2147959968.jpg" class="img">
+                    <div class="text-catalogs">Планшеты</div>
+                </div>
+            </a>
+
+
+            <a href="/pages/watch.html">
+                <div class="catalogs-div">
+                    <img src="/pic/Apple_Events_-_Special_Event_Stream_-_Apple-90.jpg" class="img">
+                    <div class="text-catalogs">Часы</div>
+                </div>
+            </a>
+
+
+            <a href="/pages/console.html">
+                <div class="catalogs-div">
+                    <img src="/pic/1565879153494.jpg" class="img">
+                    <div class="text-catalogs">Игры</div>
+                </div>
+            </a>
+
+            <a href="/pages/accessories.html">
+                <div class="catalogs-div">
+                    <img src="/pic/top-view-of-smartphone-with-keyboard-and-charger_23-2149404179.avif" class="img">
+                    <div class="text-catalogs">Аксессуары</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- 1 -->
+        <div class="main-title-products">
+            <div class="h1-hit-sale">Хиты продаж</div>
+        </div>
+
+        <!-- ФИЛЬТР -->
+        <div class="filter-cont">
+            <img id="filter-img" src="/pic/filter.png" alt=" ">
+            <div class="filter-tools" style="display: none;">
+                <p data-f="all" class="filter-p">Все</p>
+                <p data-f="phone" class="filter-p">Смартфоны</p>
+                <p data-f="laptop" class="filter-p">Ноутбуки</p>
+                <p data-f="play" class="filter-p">Игры</p>
+                <p data-f='accessories' class="filter-p">Аксессуары</p>
+                <p data-f="watch" class="filter-p">Часы</p>
+                <p data-f="music" class="filter-p">Музыка</p>
+                <p data-f="tablet" class="filter-p">Планшеты</p>
+            </div>
+            <div class="max-min-price" style="display: none;">
+                <p class="max-min-btn">Приоритет ↓</p>
+                <div class="max-min">
+                    <p id="sort-asc">Сначало недорогие</p>
+                    <p id="sort-desc">Сначало дорогие</p>
+                </div>
+            </div>
+            <div class="filter-price" style="display: none;">
+                <p>От</p>
+                <p><input id="start-price" value="0"></p>
+                <p>до</p>
+                <p><input id="finish-price" value="9999999"></p>
+                <img id="filter-accept-img" src="pic/pen.png" alt=" ">
+            </div>
+        </div>
+        <hr>
+
+        <div class="cont-all-products"></div>
+        <!-- 2 -->
+        <div class="main-title-products">
+            <div class="h1-hit-sale">Могут понравиться</div>
+        </div>
+
+        <div class="cont-all-products"></div>
+        <!-- 3 -->
+        <div class="main-title-products">
+            <div class="h1-hit-sale">Успей купить</div>
+        </div>
+
+        <div class="cont-all-products3"></div>
+        <!-- Раздел с плюсами -->
+        <div class="cont-plus">
+
+            <div class="items-cont">
+                <div class="item-plus">
+                    <img src="/pic/icons8-truck-100 (1).png" alt="truck" class="item">
+                    <div class="text-item">&nbspБыстрая<br> доставка</div>
+                </div>
+                <div class="item-plus">
+                    <img src="/pic/icons8-service-96.png" alt="truck" class="item">
+                    <div class="text-item">Надежный<br> &nbsp &nbspсервис</div>
+                </div>
+                <div class="item-plus">
+                    <img src="/pic/icons8-last-24-hours-100.png" alt="truck" class="item">
+                    <div class="text-item">Работаем<br> &nbsp 24 часа</div>
+                </div>
+                <div class="item-plus">
+                    <img src="/pic/icons8-arrow-circle-150.png" alt="truck" class="item">
+                    <div class="text-item">&nbsp &nbsp Возврат,<br> обмен товара</div>
+                </div>
+                <div class="item-plus">
+                    <img src="/pic/icons8-shield-96.png" alt="truck" class="item">
+                    <div class="text-item">Гарантия<br> &nbspна товар</div>
+                </div>
+                <div class="item-plus">
+                    <img src="/pic/icons8-sale-96.png" alt="truck" class="item">
+                    <div class="text-item">Лучшие цены</div>
+                </div>
+            </div>
+        </div>
+        <!-- Страница с музыкой -->
+        <div class="cont-all-dop-info">
+            <a href="/pages/music.html" class="a-dop-info">
+                <div class="dop-info-baner">
+                    <img src="/pic/naushnuku-za-darom.jpg" style="width:100%" class="dop-info-img">
+                    <div class="dop-info-text">
+                        Слушай музыку дешево!!
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="kontakts">
+            <div class="h-footer"><ion-icon name="call"></ion-icon> 8(800)555-35-35</div>
+            <div class="e-mail">E-mail: vtactstore@inbox.ru</div>
+            <div class="adress">Адрес: Россия, Москва, ул.Смольная 24А</div>
+        </div>
+        <hr class="hr-footer">
+        <div class="sobaka-footer">@ VtactStore 2024</div>
+    </footer>
+
+    <script src="/scripts/slider_script.js"></script>
+    <script src="/scripts/cart_script.js"></script>
+    <script src="/scripts/filter_script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

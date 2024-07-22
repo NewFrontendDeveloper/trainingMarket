@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Cruinn-Black;
+    src: url(/fonts/ofont.ru_Cruinn-Black.ttf);
+}
+
+@font-face {
+    font-family: Cruinn-Regular;
+    src: url(/fonts/ofont.ru_Cruinn-Regular.ttf);
+}
+
+#cont-modal-window-cart {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: end;
+    align-items: start;
+    background-color: #00000069;
+    z-index: 4;
+    animation-name: showModal;
+    animation-duration: 0.5s;
+}
+
+@keyframes showModal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#modal-window-cart {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #2b3a4d;
+    width: 30%;
+    height: 100%;
+    color: white;
+    animation-name: showModalWindow;
+    animation-duration: 0.5s;
+    -webkit-box-shadow: -23px 0px 20px -7px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -23px 0px 20px -7px rgba(0, 0, 0, 0.35);
+    box-shadow: -23px 0px 20px -7px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes showModalWindow {
+    from {
+        margin-right: -1000px;
+    }
+
+    to {
+        margin-right: 0;
+    }
+}
+
+.modal-product-characteristic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Cruinn-Black;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+hr {
+    width: 100%;
+    opacity: 0.3;
+}
+
+.cart-items {
+    overflow: auto;
+}
+
+.cart-item-img {
+    display: flex;
+    justify-content: start;
+    width: 150px;
+    height: 200px;
+    margin: 0 20px 0 20px;
+}
+
+.cart-item-img img {
+    object-fit: contain;
+    width: 150px;
+    height: 200px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: solid rgba(255, 255, 255, 0.35) 1px;
+    margin-top: 10px;
+}
+
+.item-cart-details {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.item-cart-details p {
+    font-size: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.item-cart-details strong {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.remove-cart-item {
+    background-color: rgba(133, 133, 133, 0.651);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remove-cart-item:hover {
+    background-color: rgba(255, 6, 6, 0.7);
+}
+
+.remove-cart-item span {
+    font-size: 30px;
+}
+
+.qty {
+    display: flex;
+}
+
+.qty span {
+    background-color: rgba(133, 133, 133, 0.651);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 1px 3px 5px black;
+}
+
+.qty span:hover {
+    scale: 1.1;
+}
+
+.qty strong {
+
+    margin-right: 10px;
+}
+
+.modal-footer-info {
+    margin-top: auto;
+    border-top: rgb(255, 255, 255) solid 1px;
+    border-radius: 20px;
+    font-family: Cruinn-Regular;
+    font-size: 30px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 1px -23px 27px -9px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 1px -23px 27px -9px rgba(255, 255, 255, 0.2);
+    box-shadow: 1px -23px 27px -9px rgba(255, 255, 255, 0.2);
+}
+
+.modal-subtotal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-subtotal p {
+    margin-right: 10px;
+}
+
+.all-modal-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-modal-btn button {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    font-family: Cruinn-Regular;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+}
+
+#modal-btn-exit {
+    background-color: #0092f3;
+    cursor: pointer;
+}
+
+#modal-btn-exit:hover {
+    background-color: #7b34ff;
+}
+
+#modal-btn-checkout {
+    background-color: #0092f3;
+    cursor: pointer;
+}
+
+#modal-btn-checkout:hover {
+    background-color: rgb(35, 175, 47);
+}

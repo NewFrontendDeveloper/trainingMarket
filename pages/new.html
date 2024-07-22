@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новинки</title>
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="/css/adaptation.css">
+    <link rel="stylesheet" href="/css/modal-window.css">
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header class="header">
+        <div class="logo-nav">
+            <h1 class="logo"><a href="/index.html">VtactStore:</a></h1>
+            <div class="cont-nav">
+                <nav>
+                    <a href="/pages/new.html">Новинки</a>
+                    <a href="/pages/laptop.html">Ноутбуки</a>
+                    <a href="/pages/phone.html">Смартфоны</a>
+                    <a href="/pages/console.html">Игры</a>
+                    <a href="/pages/accessories.html">Аксессуары</a>
+                </nav>
+            </div>
+        </div>
+        <div class="login-cart">
+            <div id="main-cont-cart" style="cursor: pointer;">
+                <a class="card"><ion-icon name="bag-handle-outline" class="cart-icon"></ion-icon></a>
+                <div class="count-cart"><span>0</span></div>
+            </div>
+
+            <div class="signin"><a href="pages/SignIn.html" class="signin">Вход</div></a>
+        </div>
+    </header>
+    <!-- Модальное окно -->
+    <div id="cont-modal-window-cart">
+        <div id="modal-window-cart">
+            <div class="modal-product-characteristic">
+                <h1>VtactCart</h1>
+
+            </div>
+            <hr>
+            <div class="cart-items"></div>
+
+            <div class="modal-footer-info">
+                <div class="modal-subtotal">
+                    <p>Итого:</p>
+                    <p><span class="subtotal-cart-price">0 </span>₽</p>
+                </div>
+                <div class="all-modal-btn">
+                    <button id="modal-btn-exit">Продолжить покупки</button>
+                    <button id="modal-btn-checkout">К оплате</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-cont">
+        <div class="title-news">Новинки</div>
+        <div class="filter-cont">
+            <button class="filter-btn">Фильтр</button>
+        </div>
+        <hr>
+
+        <div class="cont-all-products">
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/powerbank_pixian_ai.png" alt="phone" class="hit-img">
+                </div>
+                <p class="title-products">Внешний аккумулятор moonfish Magsafe, 10000 мАч, soft-touch, черный</p>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">5990р</span>
+                        <s class="hit-price">10990</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+
+                </div>
+                <div class="new-sale"><img src="/pic/217964546-new_pixian_ai.png"></div>
+            </div>
+
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/kolonkaJbl_pixian_ai.png" alt="tv" class="hit-img">
+                </div>
+                <div class="cont-title-products">
+                    <p class="title-products">Акустика портативная JBL Boombox 3, камуфляж</p>
+                </div>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">40990р</span>
+                        <s class="hit-price">50000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+                </div>
+
+                <div class="new-sale"><img src="/pic/217964546-new_pixian_ai.png"></div>
+            </div>
+
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/braslet_pixian_ai.png" alt="tablet" class="hit-img">
+                </div>
+                <div>
+                    <p class="title-products">Браслет для Apple Watch 45 мм, миланский сетчатый, графитовый</p>
+                </div>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">10990р</span>
+                        <s class="hit-price">15000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+                </div>
+                <div class="new-sale"><img src="/pic/217964546-new_pixian_ai.png"></div>
+            </div>
+
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/Ushi-bang_pixian_ai.png" alt="voice" class="hit-img">
+                </div>
+                <div>
+                    <p class="title-products">Беспроводные наушники Bang & Olufsen BeoPlay Portal, тёмно-синий</p>
+                </div>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">45990р</span>
+                        <s class="hit-price">55000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+                </div>
+                <div class="new-sale"><img src="/pic/217964546-new_pixian_ai.png"></div>
+            </div>
+
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/akum100_pixian_ai.png" class="hit-img">
+                </div>
+                <div>
+                    <p class="title-products">Внешний аккумулятор Cuktech и БЗУ, 40000 мАч, QC, PD, темно-серый</p>
+                </div>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">18990р</span>
+                        <s class="hit-price">22000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+                </div>
+                <div class="new-sale"><img src="/pic/217964546-new_pixian_ai.png"></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="kontakts">
+                <div class="h-footer"><ion-icon name="call"></ion-icon> 8(800)555-35-35</div>
+                <div class="e-mail">E-mail: vtactstore@inbox.ru</div>
+                <div class="adress">Адрес: Россия, Москва, ул.Смольная 24А</div>
+            </div>
+            <hr class="hr-footer">
+            <div class="sobaka-footer">@ VtactStore 2024</div>
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

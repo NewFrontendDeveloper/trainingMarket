@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новинки</title>
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="/css/adaptation.css">
+    <link rel="stylesheet" href="/css/modal-window.css">
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header class="header">
+        <div class="logo-nav">
+            <h1 class="logo"><a href="/index.html">VtactStore:</a></h1>
+            <div class="cont-nav">
+                <nav>
+                    <a href="/pages/new.html">Новинки</a>
+                    <a href="/pages/laptop.html">Ноутбуки</a>
+                    <a href="/pages/phone.html">Смартфоны</a>
+                    <a href="/pages/console.html">Игры</a>
+                    <a href="/pages/accessories.html">Аксессуары</a>
+                </nav>
+            </div>
+        </div>
+        <div class="login-cart">
+            <div id="main-cont-cart" style="cursor: pointer;">
+                <a class="card"><ion-icon name="bag-handle-outline" class="cart-icon"></ion-icon></a>
+                <div class="count-cart"><span>0</span></div>
+            </div>
+
+            <div class="signin"><a href="pages/SignIn.html" class="signin">Вход</div></a>
+        </div>
+    </header>
+    <!-- Модальное окно -->
+    <div id="cont-modal-window-cart">
+        <div id="modal-window-cart">
+            <div class="modal-product-characteristic">
+                <h1>VtactCart</h1>
+
+            </div>
+            <hr>
+            <div class="cart-items"></div>
+
+            <div class="modal-footer-info">
+                <div class="modal-subtotal">
+                    <p>Итого:</p>
+                    <p><span class="subtotal-cart-price">0 </span>₽</p>
+                </div>
+                <div class="all-modal-btn">
+                    <button id="modal-btn-exit">Продолжить покупки</button>
+                    <button id="modal-btn-checkout">К оплате</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-cont">
+        <div class="title-news">Смартфоны</div>
+        <div class="filter-cont">
+            <button class="filter-btn">Фильтр</button>
+        </div>
+        <hr>
+
+        <div class="cont-all-products">
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/OnePlus_pixian_ai.png" alt="phone" class="hit-img">
+                </div>
+                <p class="title-products">OnePlus 10T 8/128Gb US black (черный)</p>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">31990р</span>
+                        <s class="hit-price">64000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+
+                </div>
+                <div class="new-sale"><img src="/pic/50skidka.png" style="width: 80px;"></div>
+            </div>
+
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/phone/iphone15_pixian_ai.png" alt="tv" class="hit-img">
+                </div>
+                <div class="cont-title-products">
+                    <p class="title-products">Apple iPhone 15 Pro Max dual-SIM 256 ГБ, «титановый белый»</p>
+                </div>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">169990р</span>
+                        <s class="hit-price">190000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+                </div>
+
+
+            </div>
+
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/phone/sumsungGalaxy_pixian_ai.png" alt="tablet" class="hit-img">
+                </div>
+                <div>
+                    <p class="title-products">Смартфон Samsung Galaxy S24 Ultra 256 ГБ фиолетовый титан (CAU)</p>
+                </div>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">146990р</span>
+                        <s class="hit-price">210000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+                </div>
+
+            </div>
+
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/phone/A34_pixian_ai.png" alt="voice" class="hit-img">
+                </div>
+                <div>
+                    <p class="title-products">Смартфон Samsung Galaxy A34 6 ГБ/128 ГБ лавандовый</p>
+                </div>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">29990р</span>
+                        <s class="hit-price">60000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+                </div>
+                <div class="new-sale"><img src="/pic/50skidka.png" style="width: 80px;"></div>
+            </div>
+
+            <div class="products-card">
+                <div class="card-img">
+                    <img src="/pic/phone/rozoviyApple_pixian_ai.png" class="hit-img">
+                </div>
+                <div>
+                    <p class="title-products">Apple iPhone 13, 128 ГБ, розовый</p>
+                </div>
+                <div class="foter-info">
+                    <div class="price-hit-price">
+                        <span class="price">73990р</span>
+                        <s class="hit-price">110000р</s>
+                    </div>
+                    <button class="add-to-cart-btn"><ion-icon name="cart" class="icon"></ion-icon></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="kontakts">
+            <div class="h-footer"><ion-icon name="call"></ion-icon> 8(800)555-35-35</div>
+            <div class="e-mail">E-mail: vtactstore@inbox.ru</div>
+            <div class="adress">Адрес: Россия, Москва, ул.Смольная 24А</div>
+        </div>
+        <hr class="hr-footer">
+        <div class="sobaka-footer">@ VtactStore 2024</div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,920 @@
+@media (max-width:1920px){
+
+}
+
+@media(max-width:1400px){
+
+    
+    header{
+        position: fixed;  
+        z-index: 3;
+        width: 100%;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:#333;
+    }
+    
+    .logo-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo a{
+        text-decoration: none;
+        color: snow;
+        font-family: Cruinn-Black;
+    }
+    
+    nav{
+        font-size: 15pt;
+        font-family: Cruinn-Regular;
+        padding-left: 40px;
+    }
+    
+    nav a{
+        text-decoration: none;
+        padding: 10px;
+        color:snow;
+    }
+    
+    nav a:hover{
+        font-weight: 600;
+    }
+    
+    .card{
+        text-decoration: none;
+        color: snow;
+        position: relative;
+    }
+    
+    .cart-icon{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .card:hover{
+        scale:1.1;
+    }
+    
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+    }
+    
+    /* Скрыть изображения по умолчанию */
+    .mySlides {
+        display: none;
+    }
+    
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    
+    /* Вперед иназад кнопки */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    /* Положение "next кнопки" справа */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    /* При наведении курсора добавьте черный цвет фона с немного прозрачным */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Подпись текст */
+    .text-sale{
+        color: #f2f2f2;
+        font-size: 40px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 40%;
+        left: 45%;
+    }
+    
+    .text-sale-phone{
+        color: black;
+        font-size: 40px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 35%;
+        left: 10%;
+    }
+    .sale-proc{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 135px;
+        bottom: 90%;
+    }
+    
+    .text-sale-laptop{
+        color: #f2f2f2;
+        font-size: 40px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        bottom: 8px;
+        top: 40%;
+        left: 45%;
+    }
+    
+    .text-sale-console{
+        color: #f2f2f2;
+        font-size: 45px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 40%;
+        left: 10%;
+    }
+    .sale{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 35%;
+        left:76%
+    }
+    
+    /* Точки/пули/индикаторы */
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    
+    .active, .dot:hover {
+        background-color: #717171;  
+    }
+    
+    /* Исчезающая анимация */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    .king-cont-catalog{
+        flex-shrink: 1;
+      }
+      
+      .cont-cotalog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 15px;
+        
+      }
+      
+      .catalogs-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      
+      }
+      
+      .text-catalogs{
+        position: absolute;
+        color: #fff;
+        font-family: Cruinn-Black;
+        font-size: 30px;
+        background: rgba(0,0,0,0.8);
+        padding:20px;
+        border-radius: 7px;
+      }
+      
+      .img{
+        width: 400px;
+        height: 200px;
+      }
+      
+      .catalogs-div img {
+        transition: 0.5s; 
+       }
+      .catalogs-div img:hover {
+        transform: scale(1.05);
+       }
+      
+       .main-title-products{
+        display: flex;
+        justify-content: center;
+       }
+
+    .slider-cont{
+        box-sizing: border-box;
+        padding-top: 87px;
+    }
+
+    .text-sale-console{
+        color: #f2f2f2;
+        font-size: 35px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 35%;
+        left: 10%;
+    }
+
+    .cont-all-dop-info{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+      }
+      
+      .a-dop-info{
+        width: 900px;
+        height: 300px;
+      }
+      
+      .dop-info-baner{
+        width: 900px;
+        height: 300px;
+        margin-bottom:30px ;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      
+      .dop-info-baner:hover{
+        scale: 1.005;
+      }
+      
+      .dop-info-img{
+        width: 100%;
+        height: 300px;
+        object-fit: fill;
+        border-radius: 10px;
+      }
+      
+      .dop-info-text{
+        color: #fff;
+        position: absolute;
+        font-family: Cruinn-Black;
+        font-size: 45px;
+        top: 45%;
+        left: 30%;
+      }
+
+      footer{
+        display: block;
+        background-color: #333;
+        color: white;
+        width: 100%;
+        flex-shrink: 0;
+        font-size: 20px;
+        font-family: Cruinn-Regular;
+        padding-top: 20px; 
+        padding-bottom: 10px;
+      }
+}
+
+@media(max-width: 1000px){
+
+    header{
+        position: fixed;  
+        z-index: 3;
+        width: 100%;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:#333;
+    }
+    
+    .logo-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    
+    nav{
+        font-size: 15pt;
+        font-family: Cruinn-Regular;
+        padding-left: 40px;
+    }
+    
+    nav a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        color:snow;
+    }
+    
+    .slider-cont{
+        box-sizing: border-box;
+        padding-top: 75px;
+      }
+
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .text-sale{
+        color: #f2f2f2;
+        font-size: 30px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 40%;
+        left: 45%;
+    }
+    
+    .text-sale-phone{
+        color: black;
+        font-size: 30px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 35%;
+        left: 10%;
+    }
+    .sale-proc{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 105px;
+        bottom: 90%;
+    }
+    
+    .text-sale-laptop{
+        color: #f2f2f2;
+        font-size: 30px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        bottom: 8px;
+        top: 40%;
+        left: 45%;
+    }
+    
+    .text-sale-console{
+        color: #f2f2f2;
+        font-size: 30px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 35%;
+        left: 10%;
+    }
+
+    .sale{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 38%;
+        left:76%
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+
+      .title-products{
+        font-family: Cruinn-Black;
+        font-size: 25px;
+        height: auto;
+      }
+
+      .products-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-color: #13181e;
+        color: #fff;
+        padding: 30px;
+        width: 300px;
+        max-height: 100%;
+        transition: 0.3s;
+        position: relative;
+        }
+
+        .title-products{
+            font-size: 20px
+        }
+
+    .cont-plus{
+        background-color: #1b242e;
+        border-radius: 10px;
+        margin: 30px;
+      }
+      
+      .items-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .item-plus{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 180px;
+      }
+      
+      .item{
+        width: 130px;
+        height: 130px;
+        padding-bottom: 5px;
+      }
+      
+      .text-item{
+        color: #fff;
+        font-family: Cruinn-Regular;
+        font-size: 20pt;
+      }
+
+    .cont-all-dop-info{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+      }
+      
+      .a-dop-info{
+        width: 650px;
+        height: 250px;
+      }
+      
+      .dop-info-baner{
+        width: 650px;
+        height: 250px;
+        margin-bottom:30px ;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      
+      .dop-info-baner:hover{
+        scale: 1.005;
+      }
+      
+      .dop-info-img{
+        width: 100%;
+        height: 250px;
+        object-fit: fill;
+        border-radius: 10px;
+      }
+      
+      .dop-info-text{
+        color: #fff;
+        position: absolute;
+        font-family: Cruinn-Black;
+        font-size: 35px;
+        top: 45%;
+        left: 22%;
+      }
+
+      footer{
+        display: block;
+        background-color: #333;
+        color: white;
+        width: 100%;
+        flex-shrink: 0;
+        font-size: 16px;
+        font-family: Cruinn-Regular;
+        padding-top: 20px; 
+        padding-bottom: 10px;
+      }
+}
+
+@media(max-width: 768px){
+    
+    .logo-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        font-size: 15pt;
+        font-family: Cruinn-Regular;
+        padding-left: 40px;
+    }
+    
+    nav a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+        color:snow;
+    }
+
+    .count-cart{
+      top: 52%;
+    }
+    .card{
+      margin-bottom: 20px;
+    }
+
+    img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .login-cart{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .form{
+      width: 200px;
+      
+    }
+
+    .form_input{
+      color: #ffffff;
+      width: 201px;
+    }
+
+    .text-sale{
+        color: #f2f2f2;
+        font-size: 25px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 20%;
+        left: 45%;
+    }
+    
+    .text-sale-phone{
+        color: black;
+        font-size: 25px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 35%;
+        left: 10%;
+    }
+    .sale-proc{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 105px;
+        bottom: 90%;
+    }
+    
+    .text-sale-laptop{
+        color: #f2f2f2;
+        font-size: 25px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        bottom: 8px;
+        top: 25%;
+        left: 45%;
+    }
+    
+    .text-sale-console{
+        color: #000000;
+        font-size: 25px;
+        font-family: Cruinn-Black;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        top: 20%;
+        left: 10%;
+    }
+
+    .sale{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 52%;
+        left:77%
+    }
+    .slider-cont{
+      padding-top: 200px;
+    }
+
+    .king-cont-catalog{
+        flex-shrink: 1;
+      }
+      
+      .cont-cotalog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 15px;
+        
+      }
+      
+      .catalogs-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      
+      }
+      
+      .text-catalogs{
+        position: absolute;
+        color: #fff;
+        font-family: Cruinn-Black;
+        font-size: 25px;
+        background: rgba(0,0,0,0.8);
+        padding:10px;
+        border-radius: 7px;
+      }
+      
+      .img{
+        width: 200px;
+        height: 200px;
+      }
+      
+       .main-title-products{
+        display: flex;
+        justify-content: center;
+        
+       }
+
+    .cont-all-dop-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+      }
+      
+      .a-dop-info{
+        width: 400px;
+        height: 200px;
+      }
+      
+      .dop-info-baner{
+        width: 400px;
+        height: 200px;
+        margin-bottom:30px ;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      
+      .dop-info-baner:hover{
+        scale: 1.005;
+      }
+      
+      .dop-info-img{
+        width: 100%;
+        height: 200px;
+        object-fit: fill;
+        border-radius: 10px;
+      }
+      
+      .dop-info-text{
+        color: #fff;
+        position: absolute;
+        font-family: Cruinn-Black;
+        font-size: 25px;
+        top: 45%;
+        left: 18%;
+      }
+
+      footer{
+        display: block;
+        background-color: #333;
+        color: white;
+        width: 100%;
+        flex-shrink: 0;
+        font-size: 25px;
+        font-family: Cruinn-Regular;
+        padding-top: 20px; 
+        padding-bottom: 10px;
+      }
+      
+      .kontakts{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 12px;
+        padding-left: 30px;
+      }
+      .h-footer{
+        width: 110px;
+        padding-right: 10px;
+      }
+      .adress{
+        padding-right: 0px;
+      }
+      .e-mail{
+        padding-right: 10px;
+      }
+    
+      .hr-footer{
+        opacity: 0.3;
+      }
+      .sobaka-footer{
+        text-align: center;
+        font-family: Cruinn-Regular;
+        font-size: 12px;
+      }
+
+      .title-news{
+        padding-top: 160px;
+      }
+}
+
+@media(max-width:425px){
+
+  .logo-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo a{
+  text-decoration: none;
+  color: snow;
+  font-family: Cruinn-Black;
+  font-size: 22px;
+  }
+  
+  nav{
+    font-size: 10pt;
+    font-family: Cruinn-Regular;
+    padding-left: 20px;
+  }
+
+
+  .cont-plus{
+    width: 270px;
+    display: flex;
+    justify-content: center;
+  }
+  .items-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 270px;
+    height: 260px;
+  }
+  .item-plus{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+  }
+  .text-item{
+    font-size: 15px;
+  }
+  .item-plus img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .cont-all-dop-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .a-dop-info{
+    width: 400px;
+    height: 200px;
+  }
+  
+  .dop-info-baner{
+    width: 300px;
+    height: 170px;
+    margin-bottom:30px ;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .dop-info-baner:hover{
+    scale: 1.005;
+  }
+  
+  .dop-info-img{
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 10px;
+  }
+  
+  .dop-info-text{
+    color: #fff;
+    position: absolute;
+    font-family: Cruinn-Black;
+    font-size: 25px;
+    top: 45%;
+    left: 18%;
+  }
+
+  footer{
+    display: block;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    flex-shrink: 0;
+    font-size: 25px;
+    font-family: Cruinn-Regular;
+    padding-top: 20px; 
+    padding-bottom: 10px;
+  }
+  
+  .kontakts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    padding-left: 30px;
+  }
+  .h-footer{
+    width: 170px;
+    padding-right: 10px;
+  }
+  .adress{
+    padding-right: 0px;
+  }
+  .e-mail{
+    padding-right: 10px;
+  }
+
+  .hr-footer{
+    opacity: 0.3;
+  }
+  .sobaka-footer{
+    text-align: center;
+    font-family: Cruinn-Regular;
+    font-size: 12px;
+  }
+
+  .title-news{
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+    font-family: Cruinn-Black;
+    font-size: 50px;
+    color: white;
+  }
+}
