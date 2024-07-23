@@ -119,10 +119,8 @@ function filterRangePrice() {
     updateStartPrice()
     var contAllProducts = document.querySelector(".cont-all-products")
     for (var i = 0; i < contAllProducts.children.length; i++) {
-        if (contAllProducts.children[i].classList == "hide") {
-            return
-        }
-        else {
+        var booleanHide = contAllProducts.children[i].classList.contains("hide")
+        if (booleanHide === !true) {
             var price = +contAllProducts.children[i].getAttribute('data-price')
             if (price >= startPrice && price <= finishPrice) {
                 contAllProducts.children[i].classList.remove('hide')
@@ -130,6 +128,9 @@ function filterRangePrice() {
             else {
                 contAllProducts.children[i].classList.add('hide')
             }
+        }
+        else {
+            return
         }
 
     }
