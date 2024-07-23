@@ -39,32 +39,42 @@ maxMinPriceP.addEventListener("click", function PrioritetToggle() {
 
 /* Сокрытие элементов не подходящих под условие */
 const filterGoods = filterClass => {
-
-    /*     filterNav.forEach(item => item.classList.remove('active'));
-        const active = document.querySelector(`[data-f="${filterClass}"]`);
-        if (active) active.classList.add('active'); */
-
     updateFilterProduct();
+    const startPrice = parseFloat(document.getElementById("start-price").value);
+    const finishPrice = parseFloat(document.getElementById("finish-price").value);
+
     filterProducts.forEach(element => {
-        element.classList.remove('hide');
-        if (!element.classList.contains(filterClass) && filterClass != 'all') {
-            element.classList.add('hide')
+        const price = parseFloat(element.getAttribute('data-price'));
+        const isInPriceRange = price >= startPrice && price <= finishPrice;
+        const isVisibleCategory = element.classList.contains(filterClass) || filterClass === 'all';
+
+        if (isVisibleCategory && isInPriceRange) {
+            element.classList.remove('hide');
+        } else {
+            element.classList.add('hide');
         }
     });
 }
 
 /* Обработка нажатия на категорию */
 document.querySelector('.filter-tools').addEventListener('click', event => {
-    if (event.target.tagName !== 'P') return
+    if (event.target.tagName !== 'P') return;
 
     let filterClass = event.target.dataset['f'];
     filterGoods(filterClass);
-    window.location.hash = event.target.dataset['f']
+    window.location.hash = event.target.dataset['f'];
 });
-/* сохранение в хэш */
+
+/* Сохранение в хэш */
 if (window.location.hash) {
     filterGoods(window.location.hash.slice(1));
 }
+
+filterAccept.addEventListener('click', () => {
+    const filterClass = window.location.hash.slice(1) || 'all'; // Получение класса фильтра из хэша или 'all' по умолчанию
+    filterGoods(filterClass); // Применение фильтрации с учетом цены
+});
+
 
 
 /* сортировка по цене от меньшего к большему */
@@ -105,36 +115,3 @@ function priceSortDesc() {
 function insertAfter(e, refE) {
     return refE.parentNode.insertBefore(e, refE.nextSibling);
 }
-
-
-/* Фильтр товаров по диапозону цен */
-function filterRangePrice() {
-    const startPrice = document.getElementById("start-price").value;
-    const finishPrice = document.getElementById("finish-price").value;
-
-    const updateStartPrice = () => { startPrice }
-    const updateFinishPrice = () => { finishPrice }
-
-    updateFinishPrice()
-    updateStartPrice()
-    var contAllProducts = document.querySelector(".cont-all-products")
-    for (var i = 0; i < contAllProducts.children.length; i++) {
-        var booleanHide = contAllProducts.children[i].classList.contains("hide")
-        if (booleanHide === !true) {
-            var price = +contAllProducts.children[i].getAttribute('data-price')
-            if (price >= startPrice && price <= finishPrice) {
-                contAllProducts.children[i].classList.remove('hide')
-            }
-            else {
-                contAllProducts.children[i].classList.add('hide')
-            }
-        }
-        else {
-            return
-        }
-
-    }
-}
-
-filterAccept.addEventListener('click', filterRangePrice)
-
