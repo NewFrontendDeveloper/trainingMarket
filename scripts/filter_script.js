@@ -106,6 +106,8 @@ function insertAfter(e, refE) {
     return refE.parentNode.insertBefore(e, refE.nextSibling);
 }
 
+
+/* Фильтр товаров по диапозону цен */
 function filterRangePrice() {
     const startPrice = document.getElementById("start-price").value;
     const finishPrice = document.getElementById("finish-price").value;
@@ -117,14 +119,21 @@ function filterRangePrice() {
     updateStartPrice()
     var contAllProducts = document.querySelector(".cont-all-products")
     for (var i = 0; i < contAllProducts.children.length; i++) {
-        var price = +contAllProducts.children[i].getAttribute('data-price')
-        if (price >= startPrice && price <= finishPrice) {
-            contAllProducts.children[i].classList.remove('hide')
+        if (contAllProducts.children[i].classList == "hide") {
+            return
         }
         else {
-            contAllProducts.children[i].classList.add('hide')
+            var price = +contAllProducts.children[i].getAttribute('data-price')
+            if (price >= startPrice && price <= finishPrice) {
+                contAllProducts.children[i].classList.remove('hide')
+            }
+            else {
+                contAllProducts.children[i].classList.add('hide')
+            }
         }
+
     }
 }
 
 filterAccept.addEventListener('click', filterRangePrice)
+
