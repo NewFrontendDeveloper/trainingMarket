@@ -218,3 +218,58 @@ hr {
 #modal-btn-checkout:hover {
     background-color: rgb(35, 175, 47);
 }
+
+@media(max-width:1400px) {
+    #modal-window-cart {
+        width: 45%;
+    }
+}
+
+@media(max-width: 1000px) {
+    #modal-window-cart {
+        width: 50%;
+    }
+
+    .all-modal-btn button {
+        width: 300px;
+    }
+
+    .cart-item-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cart-item-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item-cart-details {
+        width: 300px;
+    }
+}
+
+@media(max-width: 768px) {
+    #modal-window-cart {
+        width: 70%;
+    }
+
+    .item-cart-details p {
+        font-size: 20px;
+    }
+
+    .item-cart-details strong {
+        font-size: 20px;
+    }
+
+    .all-modal-btn button {
+        width: 260px;
+    }
+
+}
+
+@media(max-width:425px) {
+    #modal-window-cart {
+        width: 100%;
+    }
+}

@@ -375,6 +375,7 @@ img {
   cursor: pointer;
 }
 
+
 #filter-accept-img {
   width: 50px;
   height: 50px;
@@ -402,7 +403,8 @@ img {
   margin-right: 10px;
 }
 
-.max-min-price {
+.max-min-price,
+.cont-filter-tools {
   position: relative;
 }
 
@@ -410,12 +412,14 @@ img {
   padding: 15px;
 }
 
-.max-min-btn {
+.max-min-btn,
+.tools-btn {
   cursor: pointer;
   margin-right: 20px;
 }
 
-.max-min {
+.max-min,
+.filter-tools {
   display: none;
   width: 270px;
   flex-direction: column;
@@ -425,16 +429,20 @@ img {
   z-index: 2;
 }
 
-.max-min p {
+.max-min p,
+.filter-tools p {
   padding: 20px;
   background-color: #333;
   margin: 0;
 }
 
-.max-min p:hover {
+.max-min p:hover,
+.filter-tools p:hover {
   background-color: #f2f2f2;
   color: #000000;
 }
+
+
 
 .filter-price input {
   font-size: 16pt;

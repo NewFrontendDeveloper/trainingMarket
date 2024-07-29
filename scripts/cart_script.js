@@ -100,9 +100,6 @@ const ITEMS = [
         dataPrice: 64990,
         qty: 1
     },
-
-
-
     {
         id: 11,
         name: 'Акустика портативная Harman Kardon Onyx Studio 8, бежевый',

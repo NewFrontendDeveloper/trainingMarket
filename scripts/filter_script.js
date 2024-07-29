@@ -1,4 +1,6 @@
 const filterTools = document.querySelector(".filter-tools")
+const contFilterTools = document.querySelector(".cont-filter-tools")
+const toolsBtn = document.querySelector(".tools-btn")
 const filterPrice = document.querySelector(".filter-price")
 const filter = document.getElementById("filter-img");
 const filterNav = document.querySelectorAll("filter-tools p")
@@ -14,13 +16,13 @@ const updateFilterProduct = () => { filterProducts }
 
 
 function filterToggle() {
-    if (filterTools.style.display === "none") {
-        filterTools.style.display = "flex"
+    if (filterPrice.style.display === "none") {
+        contFilterTools.style.display = "flex"
         filterPrice.style.display = "flex"
         maxMinPrice.style.display = "flex"
     }
     else {
-        filterTools.style.display = "none"
+        contFilterTools.style.display = "none"
         filterPrice.style.display = "none"
         maxMinPrice.style.display = "none"
     }
@@ -34,6 +36,14 @@ maxMinPriceP.addEventListener("click", function PrioritetToggle() {
         maxMin.style.display = "none"
     } else {
         maxMin.style.display = "flex"
+    }
+})
+
+toolsBtn.addEventListener("click", function enableCategory() {
+    if (filterTools.style.display === "flex") {
+        filterTools.style.display = "none"
+    } else {
+        filterTools.style.display = "flex"
     }
 })
 
