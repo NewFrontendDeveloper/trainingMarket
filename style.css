@@ -319,7 +319,7 @@ img {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
+  position: relative;
 }
 
 .text-catalogs {
@@ -330,6 +330,12 @@ img {
   background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 7px;
+  transition: 0.3s;
+}
+
+.text-catalogs:hover {
+  color: #bbb;
+  scale: 1.1;
 }
 
 .img {
