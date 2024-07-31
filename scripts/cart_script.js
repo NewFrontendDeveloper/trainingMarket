@@ -167,10 +167,16 @@ var cart_data = []
 
 function modalOpen() {
     modal.style.display = "flex";
+    modalWindow.style.animationName = "showModalWindow"
 };
 
 function modalClose() {
-    modal.style.display = "none";
+    modalWindow.style.animationName = "hideModalWindow"
+
+    setTimeout(function () {
+        modal.style.display = "none"
+    }, 200)
+
 };
 
 cartBtn.onclick = modalOpen;

@@ -704,6 +704,10 @@
     padding-top: 200px;
   }
 
+  .h1-hit-sale {
+    font-size: 50px;
+  }
+
   .products-card img {
     padding: 10px;
     width: 100px;
@@ -834,6 +838,10 @@
     left: 18%;
   }
 
+  .text-item {
+    font-size: 12pt;
+  }
+
   footer {
     display: block;
     background-color: #333;
@@ -907,7 +915,7 @@
   .cont-plus {
     width: 270px;
     display: flex;
-    justify-content: center;
+    margin: 0 60px 0 60px;
   }
 
   .items-cont {
