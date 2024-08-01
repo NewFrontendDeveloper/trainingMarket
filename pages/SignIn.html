@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "/css/SignIn.css">
-    <link rel = "stylesheet" href = "/style.css">
-    <link rel = "stylesheet" href = "/css/adaptation.css">
+    <link rel="stylesheet" href="/css/SignIn.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/adaptation.css">
     <title>Вход</title>
 </head>
+
 <body>
     <header class="header">
         <div class="logo-nav">
-            <h1 class = "logo"><a href = "/index.html">VtactStore:</a></h1>
-            <div class = "cont-nav">
+            <h1 class="logo"><a href="/index.html">VtactStore:</a></h1>
+            <div class="cont-nav">
                 <nav>
-                    <a href = "/pages/new.html">Новинки</a>
-                    <a href= "/pages/laptop.html">Ноутбуки</a>
-                    <a href = "/pages/phone.html">Смартфоны</a>
-                    <a href = "/pages/console.html">Игры</a>
-                    <a href = "/pages/accessories.html">Аксессуары</a>
+                    <a href="/pages/new.html">Новинки</a>
+                    <a href="/pages/laptop.html">Ноутбуки</a>
+                    <a href="/pages/phone.html">Смартфоны</a>
+                    <a href="/pages/console.html">Игры</a>
+                    <a href="/pages/accessories.html">Аксессуары</a>
                 </nav>
             </div>
         </div>
@@ -27,8 +29,12 @@
     </header>
 
     <div class="cont">
-        <form class="form">
-            <h1 class="form_title">Вход</h1>
+        <form class="form_entrance show">
+            <div class="cont_form_title">
+                <h1 class="form_title_entrance">Вход</h1>
+                <h1 class="slash_title">&nbsp;/&nbsp;</h1>
+                <h1 class="form_title_registration">Регистрация</h1>
+            </div>
 
             <div class="form_group">
                 <input class="form_input" placeholder=" ">
@@ -42,9 +48,36 @@
 
             <button class="form_button">Войти</button>
         </form>
+
+        <form class="form_registration hide">
+            <div class="cont_form_title">
+                <h1 class="form_title_entrance_r">Вход</h1>
+                <h1 class="slash_title">&nbsp;/&nbsp;</h1>
+                <h1 class="form_title_registration_r">Регистрация</h1>
+            </div>
+
+            <div class="form_group">
+                <input class="form_input" placeholder=" ">
+                <label class="form_label">Имя</label>
+            </div>
+
+            <div class="form_group">
+                <input class="form_input" placeholder=" ">
+                <label class="form_label">E-mail</label>
+            </div>
+
+            <div class="form_group">
+                <input class="form_input" placeholder=" ">
+                <label class="form_label">Пароль</label>
+            </div>
+
+            <button class="form_button">Зарегистрироваться</button>
+        </form>
     </div>
 
+    <script src="/scripts/registration_script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
