@@ -5,6 +5,11 @@ let registrationTitleReg = document.querySelector(".form_title_registration_r")
 let formRegistration = document.querySelector(".form_registration")
 let formEntrance = document.querySelector(".form_entrance")
 
+let inputName = document.querySelector(".form_input_name")
+let inputEmail = document.querySelector(".form_input_email")
+let inputPassword = document.querySelector(".form_input_password")
+let buttonReg = document.querySelector(".form_button_reg")
+
 entranceOrRegistration()
 
 function entranceOrRegistration() {
@@ -37,3 +42,28 @@ registartionTitle.addEventListener("click", () => {
     entranceOrRegistration()
 })
 
+let users = {};
+
+function User(inputName, inputEmail, inputPassword) {
+    this.name = inputName;
+    this.email = inputEmail;
+    this.password = inputPassword
+}
+
+function createId(users) {
+    return Object.keys(users).length
+}
+
+buttonReg.addEventListener("click", () => {
+    const nameUser = inputName.value;
+    const emailUser = inputEmail.value;
+    const passwordUser = inputPassword.value;
+
+    const user = new User(nameUser, emailUser, passwordUser)
+
+    const userId = 'User' + createId(users)
+
+    users[userId] = user
+
+    console.log(users)
+})

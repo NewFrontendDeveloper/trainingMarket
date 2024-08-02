@@ -45,6 +45,7 @@ body {
 
 .form_input,
 .form_button,
+.form_button_reg,
 .google_button,
 .signin_or {
   font-family: sans-serif;
@@ -76,7 +77,8 @@ body {
   cursor: pointer;
 }
 
-.form_button {
+.form_button,
+.form_button_reg {
   font-family: Cruinn-Regular;
   font-weight: 500;
   padding: 10px;
@@ -92,6 +94,8 @@ body {
 
 .form_button:focus,
 .form_button:hover,
+.form_button_reg:focus,
+.form_button_reg:hover,
 .google_button:focus,
 .google_button:hover {
   background-color: rgb(89, 89, 230);
@@ -118,7 +122,7 @@ body {
   transition: 0.5s;
 }
 
-.form_input {
+.input_style {
   color: #ffffff;
   width: 301px;
   padding: 0 0 10px 0;
@@ -129,12 +133,12 @@ body {
   transition: 0.5s;
 }
 
-.form_input:focus {
+.input_style:focus {
   border-bottom: 1px solid rgb(109, 109, 243);
 }
 
-.form_input:focus~.form_label,
-.form_input:not(:placeholder-shown)~.form_label {
+.input_style:focus~.form_label,
+.input_style:not(:placeholder-shown)~.form_label {
   top: -18px;
   font-size: 12px;
   color: #e0e0e0;
