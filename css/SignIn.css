@@ -31,6 +31,7 @@ body {
   padding-top: 300px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .form_registration,
@@ -41,6 +42,7 @@ body {
   box-shadow: 0 4px 16px #ccc;
   font-family: sans-serif;
   letter-spacing: 1px;
+  margin: 30px 0 30px 0;
 }
 
 .form_input,
@@ -55,7 +57,6 @@ body {
 .cont_form_title {
   display: flex;
   justify-content: center;
-
 }
 
 .form_title_entrance,
