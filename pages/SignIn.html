@@ -37,14 +37,17 @@
             </div>
 
             <div class="form_group">
-                <input class="form_input input_style" placeholder=" ">
+                <input class="form_input input_style" type="email" pattern=".+@example\.com" placeholder=" ">
                 <label class="form_label">E-mail</label>
             </div>
 
             <div class="form_group">
-                <input class="form_input input_style" placeholder=" ">
+                <input class="form_input_entrance input_style" type="password" placeholder=" ">
                 <label class="form_label">Пароль</label>
+                <img class="eye_btn_entrance" src="/pic/eye.png" alt=" "
+                    onclick="return showHidePasswordEntrance(this),toggleEyeEntrance()">
             </div>
+            <a class="a_password" href="#">Забыли пароль?</a>
 
             <button class="form_button">Войти</button>
         </form>
@@ -67,14 +70,24 @@
             </div>
 
             <div class="form_group">
-                <input class="form_input_password input_style" placeholder=" ">
-                <label class="form_label">Пароль</label>
+                <input class="form_input_password1 input_style" type="password" placeholder=" ">
+                <label class="form_label">Придумайте пароль</label>
+                <img class="eye_btn1" src="/pic/eye.png" alt=" "
+                    onclick="return showHidePasswordReg1(this),toggleEye1()">
+            </div>
+
+            <div class="form_group">
+                <input class="form_input_password2 input_style" type="password" placeholder=" ">
+                <label class="form_label">Повторите пароль</label>
+                <img class="eye_btn2" src="/pic/eye.png" alt=" "
+                    onclick="return showHidePasswordReg2(this),toggleEye2()">
             </div>
 
             <button class="form_button_reg">Зарегистрироваться</button>
         </form>
     </div>
 
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="/scripts/registration_script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

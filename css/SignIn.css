@@ -43,6 +43,7 @@ body {
   font-family: sans-serif;
   letter-spacing: 1px;
   margin: 30px 0 30px 0;
+
 }
 
 .form_input,
@@ -83,7 +84,6 @@ body {
   font-family: Cruinn-Regular;
   font-weight: 500;
   padding: 10px;
-  width: 100%;
   background-color: rgb(45, 48, 230);
   border: none;
   border-radius: 5px;
@@ -110,8 +110,31 @@ body {
 }
 
 .form_group {
+  display: flex;
   position: relative;
   margin-bottom: 30px;
+  width: 400px;
+}
+
+.a_password {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  font-size: 14px;
+  color: #8c8cfd;
+  margin-bottom: 10px;
+}
+
+.a_password:hover {
+  text-decoration: underline;
+}
+
+.form_group img {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background-color: #13181e;
 }
 
 .form_label {
@@ -132,10 +155,11 @@ body {
   background-color: transparent;
   outline: none;
   transition: 0.5s;
+  font-size: 20px;
 }
 
 .input_style:focus {
-  border-bottom: 1px solid rgb(109, 109, 243);
+  border-bottom: 1px solid #6d6df3;
 }
 
 .input_style:focus~.form_label,
@@ -143,4 +167,42 @@ body {
   top: -18px;
   font-size: 12px;
   color: #e0e0e0;
+}
+
+@media(max-width: 768px) {
+  .input_style {
+    width: 300px;
+  }
+
+  .form_label {
+    font-size: 14px;
+  }
+}
+
+@media(max-width:425px) {
+
+  .form_registration,
+  .form_entrance {
+    width: 200px;
+  }
+
+  .input_style {
+    width: 200px;
+  }
+
+  .form_title_entrance,
+  .form_title_registration,
+  .form_title_entrance_r,
+  .form_title_registration_r,
+  .slash_title {
+    font-size: 22px;
+  }
+
+  .form_label {
+    font-size: 12px;
+  }
+
+  .a_password {
+    font-size: 12px;
+  }
 }
